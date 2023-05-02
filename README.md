@@ -1,5 +1,2 @@
-Parcial - Segundo Corte - Big Data
-Realizado por:
-- Miguel Baron
-- Valery Pineda
-- Sebastian Poveda
+# Parcial - Segundo Corte - BigData
+Parcial realizado por: Miguel Baron, Valery Pineda y Sebastian Poveda
