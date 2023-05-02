@@ -2,4 +2,4 @@ bin
 lib
 env
 .csv
-
+__pycache__
