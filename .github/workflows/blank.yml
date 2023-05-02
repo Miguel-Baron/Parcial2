@@ -25,15 +25,20 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Install virtualenv and execute pytest
+      - name: Install virtualenv
         run: |          
           sudo apt install virtualenv
           virtualenv -p python3 env 
           source env/bin/activate
           pip install -r requirements.txt
           
-      - name: Execute flake8 test
+      - name: Flake8 test
         run: |
           pip install flake8
           flake8 scraping.py
-          flake8 beatifulsoup.py
+          flake8 --max-line-length=120 beatifulsoup.py 
+
+      - name: Pytest
+        run: |
+          pip install pytest
+          pytest
